@@ -100,3 +100,9 @@ j b[j] bRank[j]
 14 9 24
 15 9 25
 16 99999999 0
+
+// *** command for compiling ***
+// gcc test_lab1.c 
+// a.out < lab1fall19.a.dat
+// a.out < lab1fall19.b.dat
+// a.out < lab1fall19.c.dat
