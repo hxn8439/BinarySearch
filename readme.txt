@@ -27,19 +27,22 @@ values, respectively. The second sequence (b) would be stored similarly.
 were merged into one monotonically increasing sequence. Should equal-valued elements appear, those in the first
 sequence are copied to the output before those in the second sequence. The following (linear-time) code will compute
 (and store) the ranks for all elements if stored as suggested in (1.):
+
 void ranksByMerge()
 {
-int i,j,k;
-i=j=k=1;
-while (i<=m && j<=n)
-if (a[i]<=b[j])
-aRank[i++]=k++;
-else
-bRank[j++]=k++;
-while (i<=m)
-aRank[i++]=k++;
-while (j<=n)
-bRank[j++]=k++;
+  int i,j,k;
+  i=j=k=1;
+  while (i<=m && j<=n)
+  if (a[i]<=b[j])
+  aRank[i++]=k++;
+
+  else
+    bRank[j++]=k++;
+    
+    while (i<=m)
+    aRank[i++]=k++;
+    while (j<=n)
+    bRank[j++]=k++;
 }
 
 These tables of ranks will allow testing your code in an exhaustive fashion, e.g. for all ranks in the range 1 . . . m + n.
