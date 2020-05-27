@@ -103,6 +103,6 @@ j b[j] bRank[j]
 
 // *** command for compiling ***
 // gcc test_lab1.c 
-// a.out < lab1fall19.a.dat
-// a.out < lab1fall19.b.dat
-// a.out < lab1fall19.c.dat
+// a.out < lab1.dat
+// a.out < lab1-2.dat
+// a.out < lab1-3.dat
